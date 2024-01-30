@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "extends": [
+    ":dependencyDashboard"
+  ],
+  "enabledManagers": [
+    "dockerfile"
+  ],
+  "packageRules": [
+    {
+      "groupName": "{{{depName}}}{{#if newVersion}}-{{{newVersion}}}{{/if}}",
+      "matchUpdateTypes": [
+        "patch",
+        "digest"
+      ]
+    }
+  ]
+}
