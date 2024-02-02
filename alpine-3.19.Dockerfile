@@ -1,3 +1,3 @@
 # syntax = docker/dockerfile:1
 
-FROM golang:1.21.5-alpine3.19@sha256:4db4aac30880b978cae5445dd4a706215249ad4f43d28bd7cdf7906e9be8dd6b AS production
+FROM golang:1.21.6-alpine3.19@sha256:a6a7f1fcf12f5efa9e04b1e75020931a616cd707f14f62ab5262bfbe109aa84a AS production
